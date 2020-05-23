@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Old Stairwell 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130313
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="TKhkDFKyhvcrubOqVQVf7xQG4bUSzAuJlXiN4_Ts7yQ" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vienna Mapping and Sparse Quadratic Assignment</title>
+<meta name="keywords" content="graph partitioning, multilevel algorithm, multilevel graph partitioning, open source, kahip, algorithm, software, ordering, fill-reducing ordering, nested disection, partitioning, mesh partitioning, parallel simulations, dynamic load-balancing, domain decomposition, data mining, schulz, sanders, clustering, graph clustering, label propagation, max flow, min cut" />
+<meta name="description" content="The main project page of to open source framework VieM -- Vienna Mapping and Sparse Quadratic Assignment" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">VieM - </a><a href="#" style="color:red">Vie</a><a href="#">nna </a> <a href="#" style="color:red">M</a><a href="#">apping and Sparse Quadratic Assignment</a> </h1>
+Marcelo Fonseca Faraj, Konrad von Kirchbach, Markus Lehr, Christian Schulz and Jesper Larsson Träff
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+                
+                         
+			<h2>Overview</h2>
+Communication and topology aware process mapping is a powerful approach to reduce communication time in parallel applications with known communication patterns on large, distributed memory systems. We address the problem as a quadratic assignment problem (QAP), and provide algorithms to construct initial mappings of processes to processors as well as fast local search algorithms to further improve the mappings. By exploiting assumptions that typically hold for applications and modern supercomputer systems such as sparse communication patterns and hierarchically organized communication systems, we arrive at significantly more powerful algorithms for these special QAPs.  Our multilevel construction algorithms employ recently developed, perfectly balanced graph partitioning techniques and excessively exploit the given communication system hierarchy.  
+<p><img alt="Mapping tasks onto processors. Image source LRZ." src="images/teaser_image_edited.png" width=300 ></p>
+<br> 
+                        VieM - <a href="#" style="color:red">Vie</a>nna <a href="#" style="color:red">M</a>apping and Sparse Quadratic Assignment -- is a family of mapping programs. It includes serveral heuristics to map a task graphs onto a specified processor graph. We provide them here as easy to use open source software. <br><br>
+
+<b style="color:red">News:</b>       <br>
+<b>22nd May 2020:</b> We switched to CMake as a build system and MIT as a licence. <br>
+<b>19th May 2020:</b> We published a new TR on ``Efficient Process-to-Node Mapping Algorithms for Stencil Computations'' available <a href="https://arxiv.org/pdf/2005.09521.pdf">here</a> (work mainly done by Konrad von Kirchbach). <br>
+<b>20th March 2020:</b> ``High-Quality Hierarchical Process Mapping'' got accepted at SEA 2020.<br>
+<b>27nd January 2020:</b> We published a new TR on ``Load-Balanced Bottleneck Objectives in Process Mapping'' available <a href="https://arxiv.org/pdf/2001.09645.pdf">here</a> (which got accepted at CSC'20). <br>
+<b>22nd January 2020:</b> We published a new TR on ``High-Quality Hierarchical Process Mapping'' available <a href="https://arxiv.org/pdf/2001.07134.pdf">here</a> (work mainly done by Marcelo Fonseca Faraj). <br>
+<b>1st April 2019:</b> Marcelo Fonseca Faraj joined our team. <br>
+<b>1st December 2019:</b> Konrad von Kirchbach joined our team. <br>
+<b>1st November 2019:</b> Markus Lehr joined our team. <br>
+<b>1st April 2019:</b> Marcelo Fonseca Faraj joint our team. <br>
+<b>16th October 2018:</b> We got our FWF proposal ``Algorithm Engineering for Process Mapping'' funded. <br>
+
+<b>21st June 2017:</b> We presented our paper "Better Process Mapping and Sparse Quadratic Assignment" at SEA 2017. <br>
+<b>16th March 2017:</b> Released VieM v1.00. <br>
+<b>14th February 2017:</b> Published ArXiv Report. Link to <a href="https://arxiv.org/pdf/1702.04164.pdf">PDF</a>.<br> 
+
+
+ 
+                        <p></p>
+                        <br>
+
+			<h2>Licence</h2>
+                        The program is licenced under MIT. <br>
+                        If you publish results using our algorithms, <b>please acknowledge</b> our work by quoting the following paper (<a href="http://arxiv.org/pdf/1702.04164.pdf">PDF</a>):<br><br>
+                        <b>@inproceedings{schulztraeff2017, <br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp AUTHOR = {Schulz, Christian and Träff, Jesper Larsson},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       TITLE = {{Better Process Mapping and Sparse Quadratic Assignment}},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       BOOKTITLE = {{Proceedings of the 16th International Symposium on Experimental Algorithms (SEA'17)}},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       SERIES = {{LIPIcs}},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       PUBLISHER = {Dagstuhl},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       VOLUME = {75},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       PAGES = {4:1 -- 4:15},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       NOTE = {Technical Report, arXiv:1702.04164},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       YEAR    = {2017}<br>
+                        }</b>
+<br><br>
+
+
+Our project currently obtained the following publications: <br> <br>
+<ul>
+<li> Sasha Hunold, Konrad von Kirchbach, Markus Lehr, Christian Schulz and Jesper Larsson Träff.  Efficient Process-to-Node Mapping Algorithms for Stencil Computations.  <a href="https://arxiv.org/pdf/2005.09521.pdf">Download PDF</a>.<br><br>
+<li> Marcelo Fonseca Faraj, Alexander van der Grinten, Henning Meyerhenke, Jesper Larsson Träff and Christian Schulz.  High-Quality Hierarchical Process Mapping.  <a href="https://arxiv.org/pdf/2001.07134.pdf">Download PDF</a>.<br><br>
+<li> Konrad von Kirchbach, Christian Schulz and Jesper Larsson Träff.  Better Process Mapping and Sparse Quadratic Assignment. Extended version, now with global multisection.  <a href="http://arxiv.org/pdf/1702.04164.pdf">Download PDF</a>.<br><br>
+<li> Johannes Langguth, Sebastian Schlag, and Christian Schulz.  Load-Balanced Bottleneck Objectives in Process Mapping. Accepted at CSC'20. <a href="https://arxiv.org/pdf/2001.09645.pdf">Download PDF</a>.<br><br>
+<li> Konrad von Kirchbach, Christian Schulz and Jesper Larsson Träff.  Better Process Mapping and Sparse Quadratic Assignment. Extended version, now with global multisection.  <a href="http://arxiv.org/pdf/1702.04164.pdf">Download PDF</a>.<br><br>
+<li> Christian Schulz and Jesper Larsson Träff.  Better Process Mapping and Sparse Quadratic Assignment. Proceedings of the 16th International Symposium on Experimental Algorithms (SEA'17). 2017.  <a href="http://arxiv.org/pdf/1702.04164.pdf">Download PDF</a>.<br><br>
+
+
+
+</ul>
+                        <p></p>
+			<h2>Download</h2> 
+                        <ul>
+                                <li> <a href="https://github.com/viennamapping/VieM/archive/v1.0.tar.gz">VieM_1.00.tar.gz</a> (or available on GitHub <a href="https://github.com/viennamapping/VieM/">here</a>) 
+                                <li> <a href="http://viem.taa.univie.ac.at/viemv1.00.pdf">User Guide to VieM v1.00</a> 
+
+                                <img alt="build status" src="https://travis-ci.org/schulzchristian/VieM.svg?branch=master"/>
+                        </ul>
+
+			<h2>Support</h2>
+                        <ul>
+                                <li> Write us an <a href="mailto:christian.schulz@univie.ac.at?subject=SupportRequestVieM">email</a> if you need support!  
+                                <li>We are glad for any comments and error reports (or even bug fixes or feature requests) that you send us. 
+                                </ul>
+                                
+			<h2>Other Open Source Projects</h2>
+                        <ul>
+                                <li> <a href="http://algo2.iti.kit.edu/kahip">KaHIP</a> -- Karlsruhe High Quality Partitioning
+                                <li> <a href="http://algo2.iti.kit.edu/kahip">ParHIP</a> -- Parallel High Quality Partitioning
+                                <li> <a href="http://algo2.iti.kit.edu/kamis">KaMIS</a> -- Karlsruhe Maximum Independent Sets 
+                                <li> <a href="http://algo2.iti.kit.edu/kalp">KaLP</a> -- Karlsruhe Longest Paths 
+                                <li> <a href="http://algo2.iti.kit.edu/kadraw">KaDraw</a> -- Karlsruhe Graph Drawing 
+                                <li> <a href="http://vieclus.taa.univie.ac.at">VieClus</a> -- Vienna Graph Clustering
+
+                                </ul>
+                                
+
+</a>
+
+
+
+
+	        </div>
+
+        </div>
+	<div id="footer">
+		<p>Copyright (c) 2013-2017. Site maintained by Christian Schulz. All rights reserved. Initial release of VieM: 16. March 2017. See main site for impressum. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+	</div>
+</div>
+</body>
+</html>
